@@ -1,0 +1,36 @@
+@import "../../index.css";
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 15em;
+  cursor: pointer;
+}
+
+.mail {
+  color: var(--white);
+  font-family: "SK Concretica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 112%;
+  display: flex;
+  align-items: center;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  font-family: "SK Concretica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 131.5%;
+  cursor: pointer;
+}
+.item:not(:last-child) {
+  margin-right: 5em;
+}

@@ -1,0 +1,5 @@
+@import "../../index.css";
+.container {
+  padding: 1.5em 4em;
+  background-color: var(--mainBg);
+}
