@@ -13,10 +13,10 @@ export default function Footer() {
         <li className={s.item}>About us</li>
       </ul>
 
-      <div>
-        <span className={s.mail}>© 2023 All right reserved</span>
+      <div className={s.info}>
+        <span className={s.rights}>© 2023 All right reserved</span>
         <a className={s.mail} href="mailto:info@verifiedx.me">
-          info@verifiedx.me
+          Send us a message
         </a>
       </div>
     </div>

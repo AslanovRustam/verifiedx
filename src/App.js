@@ -1,13 +1,19 @@
 import Container from "./components/container/Container";
-import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import Hero from "./components/hero/Hero";
+import SlideSection from "./components/slideSection/SlideSection";
 
 function App() {
   return (
-    <Container>
+    <>
+      {/* <Container> */}
       <Header />
+      <Hero />
+      <SlideSection />
       <Footer />
-    </Container>
+      {/* </Container> */}
+    </>
   );
 }
 

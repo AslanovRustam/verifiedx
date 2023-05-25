@@ -1,0 +1,48 @@
+@import "../../vars.css";
+.section {
+  display: flex;
+}
+.list {
+  display: flex;
+}
+.item {
+  display: flex;
+  align-items: center;
+  border: 0.1em solid var(--grey);
+  width: calc(100% / 5);
+  padding: 2.5em 6.5em;
+  /* display: inline-block;
+  padding: 10px; */
+}
+.icon {
+  width: 100%;
+  max-width: 100%;
+}
+/* .list {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.parallaxContent {
+  display: flex;
+  width: 200%;
+  height: 100%;
+  animation: parallaxAnimation 10s infinite linear;
+} */
+.list {
+  display: flex;
+  /* overflow: hidden; */
+  white-space: nowrap;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

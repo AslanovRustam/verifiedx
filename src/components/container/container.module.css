@@ -1,5 +1,5 @@
-@import "../../index.css";
+@import "../../vars.css";
 .container {
   padding: 1.5em 4em;
-  background-color: var(--mainBg);
+  /* background-color: var(--mainBg); */
 }

@@ -1,8 +1,10 @@
-@import "../../index.css";
+@import "../../vars.css";
 .section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 0.1em solid #323232;
+  padding: 3em 7em;
 }
 .logo {
   width: 15em;
@@ -50,7 +52,7 @@
   top: -0.5em;
 }
 .name {
-  font-family: "SK Concretica";
+  /* font-family: "SK Concretica"; */
   font-style: normal;
   font-weight: 400;
   font-size: 1.2em;
@@ -60,7 +62,7 @@
 }
 .mail {
   color: var(--green);
-  font-family: "SK Concretica";
+  /* font-family: "SKConcretica"; */
   font-style: normal;
   font-weight: 400;
   font-size: 1.2em;
@@ -68,8 +70,14 @@
   display: flex;
   align-items: center;
 }
-/* @media screen and (max-width: 768px) {
-  .wraper {
+@media screen and (max-width: 376px) {
+  .mail {
     display: none;
   }
-} */
+  .logo {
+    width: 45em;
+  }
+  .menu {
+    font-size: 3.725em;
+  }
+}

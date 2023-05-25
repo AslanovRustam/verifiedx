@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
   width: 100%;
   height: 100%;
   color: #ffffff;
@@ -19,25 +18,66 @@ code {
 html {
   font-size: 0.833vw;
   height: 100%;
-  overflow-y: hidden;
+  background-color: var(--mainBg);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Avenir;
+  font-family: SKConcretica;
   text-decoration: none;
   list-style: none;
 }
 img,
 video {
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
-:root {
-  --mainBg: #141414;
-  --white: #ffffff;
-  --green: #bbff4b;
-  --grey: #323232;
+
+@font-face {
+  font-family: "BEXAGO";
+  /* font-weight: 800; */
+  src: local("BEXAGO"), url(./fonts/BEXAGOOutline.ttf) format("opentype");
+}
+@font-face {
+  font-family: "BEXAGO";
+  /* font-weight: 800; */
+  src: local("BEXAGO"), url(./fonts/BEXAGORegular.ttf) format("opentype");
+}
+@font-face {
+  font-family: "SKConcretica";
+  /* font-weight: 600; */
+  src: local("SKConcretica"),
+    url(./fonts/SKConcreticaRegular.ttf) format("opentype");
+}
+@media (orientation: landscape) and (min-aspect-ratio: 1920 / 853) {
+  html {
+    font-size: 0.65vw;
+  }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 15 / 7) {
+  html {
+    font-size: 0.67vw;
+  }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 640 / 311) {
+  html {
+    font-size: 0.7vw;
+  }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 80 / 41) {
+  html {
+    font-size: 0.73vw;
+  }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 1920 / 1007) {
+  html {
+    font-size: 0.76vw;
+  }
+}
+@media (orientation: landscape) and (min-aspect-ratio: 384 / 209) {
+  html {
+    font-size: 0.8vw;
+  }
 }
