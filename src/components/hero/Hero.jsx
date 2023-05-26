@@ -2,6 +2,7 @@ import s from "./hero.module.css";
 import planet from "../../images/Planet.png";
 import r from "../../images/R.png";
 import imageHero from "../../images/imageHero.png";
+import coin from "../../images/coin.png";
 
 export default function () {
   return (
@@ -30,6 +31,7 @@ export default function () {
       </div>
       <div className={s.images}>
         <img className={s.image} src={imageHero} alt="hero" />
+        <img className={s.coin} src={coin} alt="coin" />
       </div>
     </div>
   );

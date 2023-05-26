@@ -1,0 +1,85 @@
+@import "../../vars.css";
+
+.arrows {
+  position: absolute;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  /* padding: 0.5rem 1rem; */
+  margin-top: -4em;
+  /* font-size: 3rem; */
+  transition: all 0.5s ease-out;
+  /* z-index: 1; */
+}
+.prev:hover,
+.prev:focus,
+.next:hover,
+.next:focus {
+  /* transform: scale(1.1); */
+  background-color: rgba(243, 180, 8, 0.3);
+  border-radius: 8px;
+}
+.prev {
+  right: 1em;
+}
+.next {
+  right: 0;
+}
+.dots {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  top: 95%;
+  justify-content: center;
+  align-items: center;
+}
+.dot,
+.activeDot {
+  /* cursor: pointer; */
+  height: 0.5rem;
+  width: 1.5rem;
+  margin: 0 3px;
+  background-color: rgba(30, 246, 6, 0.3);
+  display: inline-block;
+  transition: all 0.5s ease-out;
+}
+.dot:hover,
+.dot:focus,
+.activeDot {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: rgba(12, 233, 37, 0.3);
+  transform: scale(1.3);
+}
+.sliderList {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 15em;
+}
+.window {
+  display: flex;
+}
+.itemTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 112%;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.itemDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+.arrowRight {
+  transform: rotate(180deg);
+}

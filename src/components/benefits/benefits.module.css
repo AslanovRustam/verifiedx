@@ -1,0 +1,27 @@
+@import "../../vars.css";
+.section {
+  display: flex;
+}
+.wrapper {
+  position: absolute;
+}
+.title,
+.titleGreen {
+  font-family: "BEXAGO";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.3rem;
+  line-height: 123.37%;
+}
+.titleGreen {
+  color: var(--green);
+}
+.title {
+  padding-top: 2.4em;
+  background-image: url(../../images/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 14em;
+  width: 15vw;
+}
