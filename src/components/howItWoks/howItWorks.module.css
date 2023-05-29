@@ -1,0 +1,49 @@
+@import "../../vars.css";
+.section {
+  padding: 2.4em 0 4.35em 6.9em;
+}
+.wrapper {
+  margin-bottom: 5.2em;
+}
+.title,
+.titleGreen {
+  font-family: "BEXAGO";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.3rem;
+  line-height: 123.37%;
+}
+.titleGreen {
+  color: var(--green);
+}
+.verifySection {
+  width: 50%;
+  /* padding: 121px 80px; */
+}
+.subTitle,
+.subTitleWhite,
+.description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.15em;
+  line-height: 112%;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.subTitleWhite {
+  color: var(--white);
+  font-size: 3.15em;
+  margin-bottom: 0.665em;
+}
+.description {
+  width: 65%;
+  font-size: 2.1em;
+  color: var(--white);
+}
+@media screen and (max-width: 376px) {
+  .title,
+  .titleGreen {
+    font-size: 11rem;
+  }
+}

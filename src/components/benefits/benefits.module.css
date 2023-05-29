@@ -1,10 +1,18 @@
 @import "../../vars.css";
 .section {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  border-top: 0.1em solid var(--grey);
+  border-bottom: 0.1em solid var(--grey);
+  background-image: url(../../images/bg2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .wrapper {
-  position: absolute;
+  padding: 2.4em 0 4.35em 6.9em;
 }
+
 .title,
 .titleGreen {
   font-family: "BEXAGO";
@@ -16,12 +24,9 @@
 .titleGreen {
   color: var(--green);
 }
-.title {
-  padding-top: 2.4em;
-  background-image: url(../../images/bg2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 14em;
-  width: 15vw;
+@media screen and (max-width: 376px) {
+  .title,
+  .titleGreen {
+    font-size: 11rem;
+  }
 }

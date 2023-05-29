@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
 import SlideSection from "./components/slideSection/SlideSection";
 import Benefits from "./components/benefits/Benefits";
+import HowItWorks from "./components/howItWoks/HowItWorks";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <SlideSection />
       <Benefits />
+      <HowItWorks />
       <Footer />
       {/* </Container> */}
     </>

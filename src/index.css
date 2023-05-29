@@ -19,7 +19,7 @@ html {
   font-size: 0.833vw;
   height: 100%;
   background-color: var(--mainBg);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 * {
@@ -32,10 +32,23 @@ html {
 }
 img,
 video {
-  /* max-width: 100%; */
+  max-width: 100%;
   height: auto;
 }
-
+.swiper-slide {
+  padding-bottom: 2em;
+}
+.swiper,
+swiper-container {
+  position: static !important;
+}
+.swiper-scrollbar-drag {
+  background: #bbff4b !important;
+}
+.swiper-pagination-fraction {
+  font-size: 2em !important;
+  color: #bbff4b !important;
+}
 @font-face {
   font-family: "BEXAGO";
   /* font-weight: 800; */

@@ -18,14 +18,14 @@ const items = [
       "Get your avatars verified in over 7,000 games with just one subscription.",
   },
   {
-    title: "Level Up Your Gaming Safety",
+    title: "Level Up Your Gaming ",
     description:
-      "Stay safe from scammers & imposters with verified avatars in all your favourite games. Make your friends trust you more.",
+      " in all your favourite games. Make your friends trust you more.",
   },
   {
-    title: "Earn Your Friends' Trust!",
+    title: " Trust!",
     description:
-      "Showcase your verified avatar and build trust among your friends as a reliable and authentic gamer.",
+      "uild trust among your friends as a reliable and authentic gamer.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function Benefits() {
           <span className={s.titleGreen}>Bene</span>fits
         </p>
       </div>
-      <Slider sliderList={items} />
+      <Slider items={items} />
     </div>
   );
 }
