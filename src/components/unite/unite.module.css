@@ -1,0 +1,22 @@
+@import "../../vars.css";
+.wrapper {
+  padding: 3em 0 3em 6.9em;
+}
+
+.title,
+.titleGreen {
+  font-family: "BEXAGO";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.3rem;
+  line-height: 123.37%;
+}
+.titleGreen {
+  color: var(--green);
+}
+@media screen and (max-width: 376px) {
+  .title,
+  .titleGreen {
+    font-size: 11rem;
+  }
+}

@@ -18,6 +18,14 @@
 .container:focus {
   animation-play-state: paused;
 }
+.item:hover .icon,
+.item:focus .icon {
+  fill: var(--green);
+}
+.item:hover .green,
+.item:focus .green {
+  fill: var(--white);
+}
 .item {
   display: flex;
   align-items: center;
@@ -28,7 +36,12 @@
   padding: 2.5em 6.5em;
 }
 .icon {
+  fill: var(--white);
   width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.green {
+  fill: var(--green);
 }
 .text {
   padding: 0.85em 0;
@@ -59,7 +72,7 @@
     width: 446%;
   }
   .text {
-    padding: 0 0.2em;
+    padding: 0.85em 0.2em;
     font-size: 6em;
     text-align: unset;
   }

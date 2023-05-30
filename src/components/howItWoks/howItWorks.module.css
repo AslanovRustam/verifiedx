@@ -1,6 +1,8 @@
 @import "../../vars.css";
 .section {
-  padding: 2.4em 0 4.35em 6.9em;
+  display: flex;
+  padding: 2.4em 0 0 6.9em;
+  border-bottom: 0.1em solid var(--grey);
 }
 .wrapper {
   margin-bottom: 5.2em;
@@ -16,10 +18,7 @@
 .titleGreen {
   color: var(--green);
 }
-.verifySection {
-  width: 50%;
-  /* padding: 121px 80px; */
-}
+
 .subTitle,
 .subTitleWhite,
 .description {
@@ -37,13 +36,99 @@
   margin-bottom: 0.665em;
 }
 .description {
-  width: 65%;
+  width: 70%;
+  margin-bottom: 1.25em;
   font-size: 2.1em;
   color: var(--white);
+}
+.image {
+  max-width: 48em;
+}
+.list {
+  /* padding: 5.2em 0 4.175em 0; */
+}
+.item {
+  position: relative;
+  width: 73%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1em;
+  line-height: 133%;
+}
+.item:not(:last-child) {
+  padding-bottom: 2em;
+}
+.item::before {
+  content: attr(data-number);
+  position: absolute;
+  top: -1em;
+  left: -1.3em;
+  font-size: 0.7em;
+  color: var(--green);
+}
+.wrapperList {
+  background-image: url(../../images/bgWorks.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5.2em 0 10em 6em;
+}
+.btnTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125em;
+  line-height: 112%;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+  margin: 1.675em 0;
+}
+.btnTitle span {
+  color: var(--green);
+}
+.btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 112%;
+  color: var(--black);
+  padding: 0.7em 2em;
+  background-color: var(--green);
+  transition: all 0.3s ease-in-out;
+  clip-path: polygon(0% 0%, 100% 1%, 100% 70%, 90% 100%, 0% 100%);
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--white);
 }
 @media screen and (max-width: 376px) {
   .title,
   .titleGreen {
     font-size: 11rem;
+  }
+  .section {
+    display: block;
+  }
+  .verifySection {
+    font-size: 2.2em;
+  }
+  .description {
+    width: auto;
+  }
+  .wrapperList {
+    font-size: 2.3em;
+    padding: 0 0 4em 0;
+  }
+  .item {
+    width: 85%;
+  }
+  .item::before {
+    font-size: 1em;
+  }
+  .section {
+    padding-bottom: 0;
+  }
+  .btnTitle {
+    margin: 1.8em 0 1em 0;
   }
 }

@@ -1,0 +1,61 @@
+@import "../../vars.css";
+.sliderList {
+  padding: 0 6.9em 4.35em 6.9em;
+  position: relative;
+  border-top: 0.1em solid var(--grey);
+  border-bottom: 0.1em solid var(--grey);
+}
+.wrapper {
+  padding: 6em 0;
+}
+.window {
+  display: flex;
+}
+
+.itemDescription,
+.itemTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1em;
+  line-height: 133%;
+}
+.itemDescription {
+  padding-bottom: 2em;
+}
+.itemTitle {
+  color: var(--green);
+}
+.arrowRight {
+  transform: rotate(180deg);
+}
+.swiperBtns {
+  position: absolute;
+  top: -28em;
+  right: 4em;
+  display: flex;
+  margin: 20px;
+}
+.btnNext,
+.btnPrev {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btnNext:hover,
+.btnNext:focus,
+.btnPrev:hover,
+.btnPrev:focus {
+  filter: brightness(5);
+}
+
+@media screen and (max-width: 376px) {
+  .itemTitle {
+    font-size: 6em;
+  }
+  .itemDescription {
+    font-size: 4.9em;
+  }
+  .swiperBtns {
+    top: -71em;
+    right: 0em;
+  }
+}
