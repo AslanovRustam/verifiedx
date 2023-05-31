@@ -33,6 +33,10 @@
   line-height: 131.5%;
   cursor: pointer;
 }
+.item:hover,
+.item:focus {
+  color: var(--green);
+}
 .item:not(:last-child) {
   margin-right: 5em;
 }
@@ -42,6 +46,7 @@
   }
   .logo {
     width: 59em;
+    margin-top: 13.15em;
   }
   .menu {
     font-size: 3.725em;

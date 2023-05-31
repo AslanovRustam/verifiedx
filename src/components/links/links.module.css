@@ -1,0 +1,62 @@
+@import "../../vars.css";
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  padding: 0.875em 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.13em;
+  line-height: 112%;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+}
+.title span {
+  color: var(--green);
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100vw; */
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100vw / 5);
+  padding: 1.459em 0;
+  border: 0.1em solid var(--grey);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0875em;
+  line-height: 133%;
+  text-align: center;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+.icon {
+  width: 1.55em;
+  margin-right: 1.042em;
+}
+.item:hover,
+.item:focus {
+  background-color: var(--grey);
+}
+@media screen and (max-width: 376px) {
+  .title {
+    font-size: 5.725em;
+    padding: 1.34em 0;
+  }
+  .item {
+    font-size: 7.725em;
+    border: 0.05em solid var(--grey);
+  }
+  .list {
+    flex-direction: column;
+  }
+  .item {
+    width: 100vw;
+  }
+}

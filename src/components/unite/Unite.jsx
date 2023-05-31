@@ -14,6 +14,12 @@ const items = [
     description:
       "VerifiedX adds value for gamers and game developers by enhancing safety, convenience, and credibility in a compliant manner.",
   },
+  {
+    title1: " – Guanui T.,",
+    title2: "Stess.",
+    description:
+      "VerifiedX adds value for gamers and game developers by enhancing safety, convenience, and credibility in a compliant manner.",
+  },
 ];
 export default function Unite() {
   return (

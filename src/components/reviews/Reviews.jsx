@@ -23,7 +23,7 @@ export default function Reviews({ items }) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log(viewportWidth);
+
   return (
     <section className={s.sliderList}>
       <div className={s.wrapper}>

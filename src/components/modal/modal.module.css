@@ -1,0 +1,52 @@
+.overvlow {
+  overflow: hidden;
+}
+.modalBackDrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2em 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  backdrop-filter: blur(18px);
+  transition: all 2s ease-in-out;
+  overflow: auto;
+  z-index: 2;
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* width: 29em; */
+  margin: auto;
+  background: linear-gradient(99.28deg, #0e5208 11.32%, #3b6d2f 90.01%);
+  border-radius: 1.5em;
+}
+.btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 112%;
+  color: var(--black);
+  padding: 0.7em 2em;
+  margin-top: 2.4em;
+  background-color: var(--green);
+  transition: all 0.3s ease-in-out;
+  clip-path: polygon(0% 0%, 100% 1%, 100% 70%, 90% 100%, 0% 100%);
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--white);
+}
+@media screen and (max-width: 376px) {
+  .container {
+    font-size: 2.2em;
+  }
+}

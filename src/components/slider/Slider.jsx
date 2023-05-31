@@ -23,7 +23,7 @@ export default function Slider({ items }) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log(viewportWidth);
+
   return (
     <section className={s.sliderList}>
       <Swiper

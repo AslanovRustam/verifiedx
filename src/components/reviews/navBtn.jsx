@@ -1,6 +1,7 @@
 import { useSwiper } from "swiper/react";
-import arrow from "../../images/arrow.png";
-import arrowRight from "../../images/arrowRight.png";
+import { ReactComponent as Arrow } from "../../images/arrow.svg";
+import { ReactComponent as ArrowRight } from "../../images/arrowRight.svg";
+
 import s from "./reviews.module.css";
 
 export default function NavBtn() {
@@ -8,10 +9,10 @@ export default function NavBtn() {
   return (
     <div className={s.swiperBtns}>
       <div className={s.btnNext} onClick={() => swiper.slidePrev()}>
-        <img src={arrow} alt="next slide" />
+        <Arrow />
       </div>
       <div className={s.btnPrev} onClick={() => swiper.slideNext()}>
-        <img src={arrowRight} alt="prev slide" />
+        <ArrowRight />
       </div>
     </div>
   );

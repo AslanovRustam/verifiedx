@@ -7,6 +7,7 @@ import Benefits from "./components/benefits/Benefits";
 import HowItWorks from "./components/howItWoks/HowItWorks";
 import Unite from "./components/unite/Unite";
 import Future from "./components/future/Future";
+import Links from "./components/links/Links";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <HowItWorks />
       <Unite />
       <Future />
+      <Links />
       <Footer />
       {/* </Container> */}
     </>
