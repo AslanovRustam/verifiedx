@@ -23,7 +23,7 @@ const items = [
 ];
 export default function Unite() {
   return (
-    <div className={s.section}>
+    <section className={s.section}>
       <div className={s.wrapper}>
         <p className={s.title}>
           <span className={s.titleGreen}>Game-Changers </span>Unite!
@@ -31,6 +31,6 @@ export default function Unite() {
       </div>
       <SlideSection green />
       <Reviews items={items} />
-    </div>
+    </section>
   );
 }

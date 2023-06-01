@@ -2,7 +2,7 @@ import s from "./future.module.css";
 
 export default function Future() {
   return (
-    <section className={s.section}>
+    <section className={s.section} id="joinUs">
       <div className={s.wrapper}>
         <h2 className={s.title}>
           Empowering <span className={s.titleGreen}>the Future</span> of Web3
@@ -18,9 +18,11 @@ export default function Future() {
           with us so you can{" "}
           <a href="mailto:info@verifiedx.me">try out our prototype</a>
         </span>
-        <button className={s.btn} type="button">
-          Get in Touch
-        </button>
+        <a href="mailto:info@verifiedx.me">
+          <button className={s.btn} type="button">
+            Get in Touch
+          </button>
+        </a>
       </div>
     </section>
   );

@@ -31,13 +31,13 @@ const items = [
 
 export default function Benefits() {
   return (
-    <div className={s.section}>
+    <section className={s.section} id="benefits">
       <div className={s.wrapper}>
         <p className={s.title}>
           <span className={s.titleGreen}>Bene</span>fits
         </p>
       </div>
       <Slider items={items} />
-    </div>
+    </section>
   );
 }

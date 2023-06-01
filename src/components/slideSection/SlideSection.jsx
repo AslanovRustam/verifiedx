@@ -7,7 +7,7 @@ import { ReactComponent as Icon5 } from "../../images/yoti.svg";
 
 export default function SlideSection({ green }) {
   return (
-    <div className={s.section}>
+    <section className={s.section}>
       <div className={s.container}>
         <ul className={s.list}>
           <li className={s.item}>
@@ -48,7 +48,7 @@ export default function SlideSection({ green }) {
         trusted by <span>7000+</span> games & <span>200+</span> countries &
         governments
       </p>
-    </div>
+    </section>
   );
 }
 

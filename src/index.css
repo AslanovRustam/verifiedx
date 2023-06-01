@@ -43,14 +43,14 @@ swiper-container {
   position: static !important;
 }
 .swiper-scrollbar-drag {
-  background: #bbff4b !important;
+  background: var(--green) !important;
 }
 .swiper-pagination-fraction {
   font-size: 1.5em !important;
-  color: #bbff4b !important;
+  color: var(--green) !important;
 }
 ::-webkit-scrollbar {
-  width: 0.5em;
+  width: 0.2em;
 }
 ::-webkit-scrollbar-track {
   background-color: transparent;

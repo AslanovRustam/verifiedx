@@ -1,6 +1,8 @@
-import s from "./modal.module.css";
 import { createPortal } from "react-dom";
 import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import SmoothScroll from "../../helpers/smoothScroll";
+import s from "./modal.module.css";
 
 const modalRoot = document.querySelector("#modal-root");
 
@@ -13,19 +15,35 @@ export default function Modal({ onClose }) {
   }, []);
 
   return createPortal(
+    // return (
     <div className={s.modalBackDrop} onClick={() => onClose()}>
       <div className={s.container}>
-        <ul>
-          <li>Home</li>
-          <li>Benefits</li>
-          <li>How it works</li>
-          <li>Join us</li>
-          <li>About us</li>
+        <ul className={s.list}>
+          <SmoothScroll targetId="home">
+            <li className={s.item}>Home</li>
+          </SmoothScroll>
+          <SmoothScroll targetId="benefits">
+            <li className={s.item}>Benefits</li>
+          </SmoothScroll>
+          <SmoothScroll targetId="works">
+            <li className={s.item}>How it works</li>
+          </SmoothScroll>
+          <SmoothScroll targetId="joinUs">
+            <li className={s.item}>Join us</li>
+          </SmoothScroll>
+          <li className={s.item}>
+            <NavLink to="/about" className={s.navlink}>
+              About us
+            </NavLink>
+          </li>
         </ul>
-        <button className={s.btn} type="button">
-          Get in Touch
-        </button>
+        <SmoothScroll targetId="footer">
+          <button className={s.btn} type="button">
+            Contact Us
+          </button>
+        </SmoothScroll>
       </div>
+      {/* </div> */}
     </div>,
     modalRoot
   );

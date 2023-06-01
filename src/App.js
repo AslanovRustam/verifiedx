@@ -1,28 +1,19 @@
-import Container from "./components/container/Container";
-import Header from "./components/header/Header";
-import Footer from "./components/footer/Footer";
-import Hero from "./components/hero/Hero";
-import SlideSection from "./components/slideSection/SlideSection";
-import Benefits from "./components/benefits/Benefits";
-import HowItWorks from "./components/howItWoks/HowItWorks";
-import Unite from "./components/unite/Unite";
-import Future from "./components/future/Future";
-import Links from "./components/links/Links";
+import { lazy } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import SharedLayaut from "./pages/SharedLayaut";
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
 
 function App() {
   return (
     <>
-      {/* <Container> */}
-      <Header />
-      <Hero />
-      <SlideSection />
-      <Benefits />
-      <HowItWorks />
-      <Unite />
-      <Future />
-      <Links />
-      <Footer />
-      {/* </Container> */}
+      <Routes>
+        <Route path="/" element={<SharedLayaut />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Route>
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
     </>
   );
 }

@@ -12,7 +12,7 @@ const list = [
 
 export default function HowItWorks() {
   return (
-    <section className={s.section}>
+    <section className={s.section} id="works">
       <div>
         <div className={s.wrapper}>
           <p className={s.title}>
@@ -43,9 +43,11 @@ export default function HowItWorks() {
         <p className={s.btnTitle}>
           Join the Waitlist <span>Now!</span>
         </p>
-        <button className={s.btn} type="button">
-          Join Waitlist
-        </button>
+        <a href="mailto:info@verifiedx.me">
+          <button className={s.btn} type="button">
+            Join Waitlist
+          </button>
+        </a>
       </div>
     </section>
   );

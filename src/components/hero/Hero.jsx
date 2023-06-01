@@ -6,7 +6,7 @@ import coin from "../../images/coin.png";
 
 export default function () {
   return (
-    <div className={s.section}>
+    <section className={s.section} >
       <div className={s.aside}>
         <div className={s.text}>
           <span className={s.textGreen}>Cross-Game</span>
@@ -25,14 +25,17 @@ export default function () {
             <p>with your verified avatars</p>
           </div>
         </div>
-        <button className={s.btn} type="button">
-          Get in Touch
-        </button>
+        <a href="mailto:info@verifiedx.me">
+          {" "}
+          <button className={s.btn} type="button">
+            Get in Touch
+          </button>
+        </a>
       </div>
       <div className={s.images}>
         <img className={s.image} src={imageHero} alt="hero" />
         <img className={s.coin} src={coin} alt="coin" />
       </div>
-    </div>
+    </section>
   );
 }
