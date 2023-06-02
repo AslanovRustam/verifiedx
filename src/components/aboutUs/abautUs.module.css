@@ -1,0 +1,107 @@
+@import "../../vars.css";
+.section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10em 7em 7.45em 7em;
+  border-bottom: 0.1em solid var(--grey);
+  background-image: url(../../images/bgHero.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  background-position: right;
+}
+.text {
+  width: 50vw;
+}
+.links {
+  display: flex;
+  margin: 1.15em 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.215em;
+  line-height: 131.5%;
+}
+.links p {
+  text-decoration: underline;
+  color: var(--green);
+  cursor: pointer;
+}
+.navLink {
+  color: inherit;
+}
+p:hover,
+p:focus {
+  text-decoration: none;
+  color: var(--white);
+}
+.title,
+.title span {
+  font-family: "BEXAGO";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.6rem;
+  line-height: 123.37%;
+  color: var(--green);
+}
+.title span {
+  color: var(--white);
+}
+.subTitle {
+  padding: 1.4em 0 2.54em 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.05em;
+  line-height: 112%;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+}
+.description,
+.descriptionGreen {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 133%;
+}
+.descriptionGreen {
+  margin-top: 1.5em;
+  color: var(--green);
+}
+.images {
+  position: relative;
+  width: 50vw;
+}
+.image1,
+.image2,
+.image3,
+.image4,
+.coin {
+  position: absolute;
+}
+.image3 {
+  width: 9em;
+  top: 6.5em;
+  left: 0;
+}
+.image1 {
+  width: 13em;
+  top: -3em;
+  left: 6.6em;
+}
+.image4 {
+  width: 10.75em;
+  top: 6.5em;
+  left: 16em;
+}
+.image2 {
+  width: 5.3125em;
+  top: 1.2em;
+  left: 26.7em;
+}
+.coin {
+  width: 10.25em;
+  top: 2.6em;
+  left: 28.4em;
+}
+.textContainer {
+  padding-top: 25em;
+}

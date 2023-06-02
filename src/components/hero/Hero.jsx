@@ -6,7 +6,7 @@ import coin from "../../images/coin.png";
 
 export default function () {
   return (
-    <section className={s.section} >
+    <section className={s.section} id="home" >
       <div className={s.aside}>
         <div className={s.text}>
           <span className={s.textGreen}>Cross-Game</span>
