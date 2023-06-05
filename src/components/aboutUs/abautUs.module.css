@@ -1,17 +1,32 @@
 @import "../../vars.css";
 .section {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   padding: 10em 7em 7.45em 7em;
   border-bottom: 0.1em solid var(--grey);
   background-image: url(../../images/bgHero.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  background-position: right;
+  background-position: right -20em bottom 50%;
 }
-.text {
-  width: 50vw;
+.container,
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+.textConrainer,
+.textContainerLeft {
+  width: 38vw;
+}
+
+.wrapper,
+.textContainerRight {
+  position: relative;
+  width: 42vw;
+}
+.wrapper {
+  top: -3em;
 }
 .links {
   display: flex;
@@ -29,8 +44,8 @@
 .navLink {
   color: inherit;
 }
-p:hover,
-p:focus {
+.navLink:hover,
+.navLink:focus {
   text-decoration: none;
   color: var(--white);
 }
@@ -59,17 +74,21 @@ p:focus {
 .descriptionGreen {
   font-style: normal;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2.1em;
   line-height: 133%;
 }
 .descriptionGreen {
-  margin-top: 1.5em;
+  margin-top: 1.2em;
   color: var(--green);
 }
-.images {
-  position: relative;
-  width: 50vw;
+.image1,
+.image2,
+.image3,
+.image4,
+.coin {
+  position: absolute;
 }
+
 .image1,
 .image2,
 .image3,
@@ -79,29 +98,76 @@ p:focus {
 }
 .image3 {
   width: 9em;
-  top: 6.5em;
+  top: 13em;
   left: 0;
 }
 .image1 {
   width: 13em;
-  top: -3em;
-  left: 6.6em;
+  left: 8.6em;
 }
 .image4 {
   width: 10.75em;
-  top: 6.5em;
-  left: 16em;
+  top: 13em;
+  left: 23em;
 }
 .image2 {
   width: 5.3125em;
-  top: 1.2em;
-  left: 26.7em;
+  top: 7em;
+  left: 34em;
 }
 .coin {
   width: 10.25em;
-  top: 2.6em;
-  left: 28.4em;
+  top: 9.6em;
+  left: 35.4em;
 }
-.textContainer {
-  padding-top: 25em;
+@media screen and (max-width: 376px) {
+  .section {
+    background-size: cover;
+    padding-bottom: 15em;
+  }
+  .container,
+  .images {
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+  .textConrainer,
+  .textContainerLeft,
+  .wrapper,
+  .textContainerRight {
+    width: auto;
+    /* margin-top: 26em; */
+  }
+  .textContainerLeft {
+    margin-top: 22em;
+  }
+  .links {
+    font-size: 3.2em;
+  }
+  .title,
+  .title span {
+    font-size: 10.25rem;
+  }
+  .subTitle {
+    font-size: 3.875em;
+    width: 12.3em;
+  }
+  .coin {
+    width: 19em;
+    left: auto;
+    right: 0;
+    top: -12em;
+  }
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    font-size: 1.5em;
+  }
+  .textContainerLeft,
+  .textContainerRight {
+    font-size: 1.6em;
+  }
+  .description {
+    margin-top: 1em;
+  }
 }

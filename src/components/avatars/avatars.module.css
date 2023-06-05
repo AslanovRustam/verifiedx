@@ -1,0 +1,44 @@
+@import "../../vars.css";
+.list {
+  display: flex;
+}
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100vw / 3);
+  padding: 4.1em 6em;
+  border: 0.1em solid var(--grey);
+}
+.avatar {
+  width: 17.5em;
+}
+.coin {
+  position: absolute;
+  width: 7em;
+  right: 8em;
+}
+.name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0775em;
+  line-height: 133%;
+  margin-top: 1.965em;
+}
+@media screen and (max-width: 376px) {
+  .list {
+    flex-direction: column;
+  }
+  .item {
+    width: auto;
+    font-size: 4em;
+    text-align: center;
+  }
+  .name {
+    font-size: 1.2em;
+  }
+  .coin {
+    right: 5em;
+  }
+}

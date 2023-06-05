@@ -5,7 +5,7 @@
   left: 0;
   z-index: 52;
   width: 100%;
-  background-color: var(--mainBg);
+  background-color: var(--black);
   display: flex;
   justify-content: space-between;
   align-items: center;

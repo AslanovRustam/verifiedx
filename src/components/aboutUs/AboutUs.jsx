@@ -11,35 +11,42 @@ export default function AboutUs() {
     <section className={s.section}>
       <div className={s.text}>
         <div className={s.links}>
-          <p>
+          <p className={s.navLink}>
             <NavLink to="/" className={s.navLink}>
               Home
             </NavLink>
           </p>{" "}
           <div>&nbsp;- About us</div>
         </div>
-        <h2 className={s.title}>
-          About <span>Us</span>
-        </h2>
-        <p className={s.subTitle}>
-          Empower a safer & more convenient virtual world
-        </p>
-        <p className={s.description}>
-          In the booming web3 and metaverse, millions of people engage in
-          virtual worlds for gaming, socializing, and collaboration. However,
-          most of these worlds lack a secure avatar verification system, leaving
-          users vulnerable to scams, frauds, and impersonation.
-        </p>
+        <div className={s.container}>
+          <div className={s.textConrainer}>
+            <h2 className={s.title}>
+              About <span>Us</span>
+            </h2>
+            <p className={s.subTitle}>
+              Empower a safer & more convenient virtual world
+            </p>
+          </div>
+          <div className={s.wrapper}>
+            <img className={s.image1} src={image1} alt="image1" />
+            <img className={s.image2} src={image2} alt="image2" />
+            <img className={s.image3} src={image3} alt="image3" />
+            <img className={s.image4} src={image4} alt="image4" />
+            <img className={s.coin} src={coin} alt="coin" />
+          </div>
+        </div>
       </div>
       <div className={s.images}>
-        <div className={s.wrapper}>
-          <img className={s.image1} src={image1} alt="image1" />
-          <img className={s.image2} src={image2} alt="image2" />
-          <img className={s.image3} src={image3} alt="image3" />
-          <img className={s.image4} src={image4} alt="image4" />
-          <img className={s.coin} src={coin} alt="coin" />
+        <div className={s.textContainerLeft}>
+          <p className={s.description}>
+            In the booming web3 and metaverse, millions of people engage in
+            virtual worlds for gaming, socializing, and collaboration. However,
+            most of these worlds lack a secure avatar verification system,
+            leaving users vulnerable to scams, frauds, and impersonation.
+          </p>
         </div>
-        <div className={s.textContainer}>
+
+        <div className={s.textContainerRight}>
           <p className={s.description}>
             Additionally, these worlds often operate in isolation. VerifiedX is
             a cross-game avatar verification platform for web3 gamers,
