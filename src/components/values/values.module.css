@@ -1,0 +1,68 @@
+@import "../../vars.css";
+.section {
+  position: relative;
+  padding: 5.215em 7.56em;
+  border-bottom: 0.1em solid var(--grey);
+}
+.title {
+  margin-bottom: 1.08em;
+  font-family: "BEXAGO";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5.5525em;
+  line-height: 123.37%;
+}
+.title span {
+  font-family: "BEXAGO";
+  color: var(--green);
+}
+.image {
+  position: absolute;
+  right: 6em;
+  width: 49.4em;
+}
+.list {
+  width: 40vw;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.09em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.08em;
+  line-height: 112%;
+  letter-spacing: 0.165em;
+}
+.item:last-child {
+  margin-bottom: 0;
+}
+.titleDescription {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.titleDescription span {
+  color: var(--green);
+}
+.description {
+  line-height: 133.33%;
+}
+@media screen and (max-width: 376px) {
+  .section {
+    padding: 5.215em 2em;
+    font-size: 2em;
+  }
+  .image {
+    position: static;
+    width: auto;
+  }
+  .list {
+    width: auto;
+  }
+  .item {
+    font-size: 2.87em;
+  }
+  .description {
+    font-size: 0.833em;
+  }
+}

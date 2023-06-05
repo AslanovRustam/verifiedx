@@ -1,0 +1,49 @@
+@import "../../vars.css";
+.section {
+  padding: 8.5em 0;
+  text-align: center;
+}
+.title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125em;
+  line-height: 112%;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.title a {
+  color: var(--white);
+  cursor: pointer;
+}
+a:hover,
+a:focus {
+  color: var(--green);
+  text-decoration: underline;
+}
+.btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 112%;
+  color: var(--black);
+  padding: 0.7em 2em;
+  margin-top: 1.5em;
+  background-color: var(--green);
+  transition: all 0.3s ease-in-out;
+  clip-path: polygon(0% 0%, 100% 1%, 100% 70%, 90% 100%, 0% 100%);
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--white);
+}
+
+@media screen and (max-width: 376px) {
+  .btn {
+    font-size: 7.5em;
+  }
+  .title {
+    font-size: 5.76em;
+  }
+}

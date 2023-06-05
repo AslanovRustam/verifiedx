@@ -51,23 +51,3 @@ export default function SlideSection({ green }) {
     </section>
   );
 }
-
-{
-  /* <ul className={s.list}>
-  <li className={s.item}>
-    <img className={s.icon} src={Icon1} alt="icon1" />
-  </li>
-  <li className={s.item}>
-    <img className={s.icon} src={Icon2} alt="icon2" />
-  </li>
-  <li className={s.item}>
-    <img className={s.icon} src={Icon3} alt="icon3" />
-  </li>
-  <li className={s.item}>
-    <img className={s.icon} src={Icon4} alt="icon4" />
-  </li>
-  <li className={s.item}>
-    <img className={s.icon} src={Icon5} alt="icon5" />
-  </li>
-</ul>; */
-}

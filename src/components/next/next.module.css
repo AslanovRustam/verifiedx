@@ -1,0 +1,48 @@
+@import "../../vars.css";
+.section {
+  padding: 5.215em 7.56em;
+  background-image: url(../../images/bg2.png);
+  background-repeat: no-repeat;
+  background-size: 23em 100%;
+  border-top: 0.1em solid var(--grey);
+  border-bottom: 0.1em solid var(--grey);
+}
+.next {
+}
+.subTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.125em;
+  line-height: 112%;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+}
+.subTitleGreen {
+  color: var(--green);
+}
+.list {
+  display: flex;
+  gap: 5em;
+  justify-content: space-between;
+  margin-top: 4.175em;
+}
+.item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1em;
+  line-height: 112%;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+}
+.item span {
+  color: var(--green);
+}
+@media screen and (max-width: 376px) {
+  .section {
+    font-size: 2em;
+    padding: 5.215em 2em;
+  }
+  .list {
+    flex-direction: column;
+  }
+}
