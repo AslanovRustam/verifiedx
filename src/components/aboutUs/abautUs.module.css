@@ -100,25 +100,30 @@
   width: 9em;
   top: 13em;
   left: 0;
+  animation: blinking 9s infinite ease-in-out;
 }
 .image1 {
   width: 13em;
   left: 8.6em;
+  animation: blinking 9s infinite ease-in-out 2s;
 }
 .image4 {
   width: 10.75em;
   top: 13em;
   left: 23em;
+  animation: blinking 9s infinite ease-in-out 1.5s;
 }
 .image2 {
   width: 5.3125em;
   top: 7em;
   left: 34em;
+  animation: blinking 9s infinite ease-in-out 1s;
 }
 .coin {
   width: 10.25em;
   top: 9.6em;
   left: 35.4em;
+  animation: blinking 9s infinite ease-in-out 3s;
 }
 @media screen and (max-width: 376px) {
   .section {
@@ -169,5 +174,22 @@
   }
   .description {
     margin-top: 1em;
+  }
+}
+@keyframes blinking {
+  0%,
+  10%,
+  14%,
+  16%,
+  18%,
+  65%,
+  69%,
+  100% {
+    opacity: 1;
+  }
+  12%,
+  17%,
+  67% {
+    opacity: 0.8;
   }
 }

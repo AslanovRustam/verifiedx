@@ -16,7 +16,7 @@ export default function AboutUs() {
               Home
             </NavLink>
           </p>{" "}
-          <div>&nbsp;- About us</div>
+          <div id="home">&nbsp;- About us</div>
         </div>
         <div className={s.container}>
           <div className={s.textConrainer}>

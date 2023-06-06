@@ -90,6 +90,20 @@
 .active .item:nth-child(3) {
   transform: translate(-50%, -0.25em) rotate(-45deg);
 }
+.myNode {
+  opacity: 0;
+}
+.myNode enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.myNode exit {
+  opacity: 1;
+}
+.myNode exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
 @media screen and (max-width: 376px) {
   .mail {
     display: none;

@@ -10,6 +10,7 @@ export default function Header() {
   const togleModal = () => {
     setShowmodal(!showModal);
   };
+
   return (
     <>
       <header className={s.section} id="header">
@@ -30,7 +31,8 @@ export default function Header() {
           info@verifiedx.me
         </a>
       </header>
-      {showModal && <Modal onClose={togleModal} />}
+      {/* {showModal && <Modal onClose={togleModal} showModal={showModal} />} */}
+      <Modal onClose={togleModal} showModal={showModal} />
     </>
   );
 }

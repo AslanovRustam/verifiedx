@@ -6,18 +6,19 @@ import s from "./modal.module.css";
 
 const modalRoot = document.querySelector("#modal-root");
 
-export default function Modal({ onClose }) {
+export default function Modal({ onClose, showModal }) {
   useEffect(() => {
     document.body.classList.add(s.overvlow);
     return () => {
       document.body.classList.remove(s.overvlow);
     };
   }, []);
-
   return createPortal(
-    // return (
-    <div className={s.modalBackDrop} onClick={() => onClose()}>
-      <div className={s.container}>
+    <div
+      className={`${s.modalBackDrop} ${showModal ? s.opacity : ""}`}
+      onClick={() => onClose()}
+    >
+      <div className={`${s.container} ${showModal ? s.containerActive : ""}`}>
         <ul className={s.list}>
           <SmoothScroll targetId="home">
             <li className={s.item}>Home</li>
@@ -43,7 +44,6 @@ export default function Modal({ onClose }) {
           </button>
         </SmoothScroll>
       </div>
-      {/* </div> */}
     </div>,
     modalRoot
   );
