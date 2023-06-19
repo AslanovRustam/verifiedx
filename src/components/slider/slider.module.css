@@ -27,7 +27,7 @@
 }
 .swiperBtns {
   position: absolute;
-  top: 1em;
+  top: -9em;
   right: 4em;
   display: flex;
   margin: 1.7375em;
@@ -52,7 +52,7 @@
     font-size: 4.9em;
   }
   .swiperBtns {
-    top: -1em;
+    top: -16em;
     right: 0em;
   }
 }
