@@ -1,3 +1,4 @@
+import ScrollAnimation from "../../helpers/scrollAnimation";
 import s from "./values.module.css";
 import value from "../../images/value.png";
 const list = [
@@ -37,9 +38,11 @@ const list = [
 export default function Values() {
   return (
     <section className={s.section}>
-      <h2 className={s.title}>
-        Our <span>Values</span>
-      </h2>
+      <ScrollAnimation>
+        <h2 className={s.title}>
+          Our <span>Values</span>
+        </h2>
+      </ScrollAnimation>
       <img className={s.image} src={value} alt="value" />
       <ul className={s.list}>
         {list.map((item) => (

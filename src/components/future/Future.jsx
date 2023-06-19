@@ -1,13 +1,16 @@
+import ScrollAnimation from "../../helpers/scrollAnimation";
 import s from "./future.module.css";
 
 export default function Future() {
   return (
     <section className={s.section} id="joinUs">
       <div className={s.wrapper}>
-        <h2 className={s.title}>
-          Empowering <span className={s.titleGreen}>the Future</span> of Web3
-          Gaming
-        </h2>
+        <ScrollAnimation>
+          <h2 className={s.title}>
+            Empowering <span className={s.titleGreen}>the Future</span> of Web3
+            Gaming
+          </h2>
+        </ScrollAnimation>
         <p className={s.subTitle}>
           Join Us in Creating a Safer Gaming Landscape
         </p>

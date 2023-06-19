@@ -38,10 +38,7 @@ video {
 .swiper-slide {
   padding-bottom: 2em;
 }
-.swiper,
-swiper-container {
-  position: static !important;
-}
+
 .swiper-scrollbar-drag {
   background: var(--green) !important;
 }

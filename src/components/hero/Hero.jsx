@@ -1,3 +1,4 @@
+import ScrollAnimation from "../../helpers/scrollAnimation";
 import s from "./hero.module.css";
 import planet from "../../images/Planet.png";
 import r from "../../images/R.png";
@@ -6,15 +7,19 @@ import coin from "../../images/coin.png";
 
 export default function () {
   return (
-    <section className={s.section} id="home" >
+    <section className={s.section} id="home">
       <div className={s.aside}>
-        <div className={s.text}>
-          <span className={s.textGreen}>Cross-Game</span>
-          <span className={s.textWhite}>Avatar</span>
-          <span className={s.textWhite}>Verification </span>
-          <span className={s.textGreen}>for Web3</span>
-          <span className={s.textGreen}>Gamers</span>
-        </div>
+        <ScrollAnimation>
+          {" "}
+          <div className={s.text}>
+            <span className={s.textGreen}>Cross-Game</span>
+            <span className={s.textWhite}>Avatar</span>
+            <span className={s.textWhite}>Verification </span>
+            <span className={s.textGreen}>for Web3</span>
+            <span className={s.textGreen}>Gamers</span>
+          </div>
+        </ScrollAnimation>
+
         <div className={s.wrapper}>
           <div className={s.icons}>
             <img className={s.iconItem} src={planet} alt="planet" />

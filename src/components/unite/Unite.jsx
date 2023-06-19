@@ -1,5 +1,6 @@
 import SlideSection from "../slideSection/SlideSection";
 import Reviews from "../reviews/Reviews";
+import ScrollAnimation from "../../helpers/scrollAnimation";
 import s from "./unite.module.css";
 const items = [
   {
@@ -24,11 +25,13 @@ const items = [
 export default function Unite() {
   return (
     <section className={s.section}>
-      <div className={s.wrapper}>
-        <p className={s.title}>
-          <span className={s.titleGreen}>Game-Changers </span>Unite!
-        </p>
-      </div>
+      <ScrollAnimation>
+        <div className={s.wrapper}>
+          <p className={s.title}>
+            <span className={s.titleGreen}>Game-Changers </span>Unite!
+          </p>
+        </div>
+      </ScrollAnimation>
       <SlideSection green />
       <Reviews items={items} />
     </section>

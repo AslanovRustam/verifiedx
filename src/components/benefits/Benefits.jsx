@@ -1,5 +1,6 @@
-import s from "./benefits.module.css";
 import Slider from "../slider/Slider";
+import ScrollAnimation from "../../helpers/scrollAnimation";
+import s from "./benefits.module.css";
 
 const items = [
   {
@@ -32,11 +33,13 @@ const items = [
 export default function Benefits() {
   return (
     <section className={s.section} id="benefits">
-      <div className={s.wrapper}>
-        <p className={s.title}>
-          <span className={s.titleGreen}>Bene</span>fits
-        </p>
-      </div>
+      <ScrollAnimation>
+        <div className={s.wrapper}>
+          <p className={s.title}>
+            <span className={s.titleGreen}>Bene</span>fits
+          </p>
+        </div>
+      </ScrollAnimation>
       <Slider items={items} />
     </section>
   );

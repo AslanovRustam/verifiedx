@@ -1,3 +1,4 @@
+import ScrollAnimation from "../../helpers/scrollAnimation";
 import s from "./links.module.css";
 import { ReactComponent as Discord } from "../../images/Discord.svg";
 import { ReactComponent as Email } from "../../images/Email.svg";
@@ -8,9 +9,11 @@ import { ReactComponent as Twitter } from "../../images/Twitter.svg";
 export default function Links() {
   return (
     <section className={s.section}>
-      <h2 className={s.title}>
-        <span>our</span> links
-      </h2>
+      <ScrollAnimation>
+        <h2 className={s.title}>
+          <span>our</span> links
+        </h2>
+      </ScrollAnimation>
       <ul className={s.list}>
         <a href="https://discord.gg/ps8f58kP3Z">
           <li className={s.item}>

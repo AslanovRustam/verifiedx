@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import ScrollAnimation from "../../helpers/scrollAnimation";
 import s from "./abautUs.module.css";
 import coin from "../../images/coin.png";
 import image1 from "../../images/image1.png";
@@ -20,9 +21,11 @@ export default function AboutUs() {
         </div>
         <div className={s.container}>
           <div className={s.textConrainer}>
-            <h2 className={s.title}>
-              About <span>Us</span>
-            </h2>
+            <ScrollAnimation>
+              <h2 className={s.title}>
+                About <span>Us</span>
+              </h2>
+            </ScrollAnimation>
             <p className={s.subTitle}>
               Empower a safer & more convenient virtual world
             </p>

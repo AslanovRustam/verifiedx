@@ -1,5 +1,6 @@
-import s from "./howItWorks.module.css";
+import ScrollAnimation from "../../helpers/scrollAnimation";
 import image from "../../images/imageWork.png";
+import s from "./howItWorks.module.css";
 
 const list = [
   "Choose Your Game - Which game's avatar do you want to verify?",
@@ -14,11 +15,13 @@ export default function HowItWorks() {
   return (
     <section className={s.section} id="works">
       <div>
-        <div className={s.wrapper}>
-          <p className={s.title}>
-            <span className={s.titleGreen}>HOW IT </span>WORKS
-          </p>
-        </div>
+        <ScrollAnimation>
+          <div className={s.wrapper}>
+            <p className={s.title}>
+              <span className={s.titleGreen}>HOW IT </span>WORKS
+            </p>
+          </div>
+        </ScrollAnimation>
         <div>
           <div className={s.verifySection}>
             <p className={s.subTitle}>Verify Your Avatars</p>
