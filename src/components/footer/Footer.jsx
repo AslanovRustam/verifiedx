@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../images/Logo.png";
 import s from "./footer.module.css";
-import SmoothScrollTo from "../../helpers/smoothScroll";
 
 export default function Footer() {
   return (
@@ -11,16 +10,18 @@ export default function Footer() {
       </NavLink>
       <ul className={s.list}>
         <li className={s.item}>
-          <SmoothScrollTo targetId="home">Home </SmoothScrollTo>
+          <NavLink to="/" className={s.navlink}>
+            Home
+          </NavLink>
         </li>
         <li className={s.item}>
-          <SmoothScrollTo targetId="benefits">Benefits </SmoothScrollTo>
+          <a href="#benefits">Benefits</a>
         </li>
         <li className={s.item}>
-          <SmoothScrollTo targetId="works">How it works</SmoothScrollTo>
+          <a href="#works">How it works</a>
         </li>
         <li className={s.item}>
-          <SmoothScrollTo targetId="joinUs">Join us </SmoothScrollTo>
+          <a href="#joinUs">Join us</a>
         </li>
         <li className={s.item}>
           <NavLink to="/about" className={s.navlink}>

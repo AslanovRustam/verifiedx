@@ -40,6 +40,9 @@
 .item:not(:last-child) {
   margin-right: 5em;
 }
+.item a {
+  color: inherit;
+}
 .navlink {
   color: inherit;
 }

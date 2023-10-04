@@ -74,6 +74,9 @@
 .item:focus {
   color: var(--green);
 }
+.item a {
+  color: inherit;
+}
 .navlink {
   color: inherit;
 }
